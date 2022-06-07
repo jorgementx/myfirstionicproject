@@ -1,0 +1,6 @@
+{
+	"appId": "com.jorgementx.app",
+	"appName": "myfirstionicproject",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

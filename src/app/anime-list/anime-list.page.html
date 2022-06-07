@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ANIME LIST</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-virtual-scroll [items]="animeList">
+    <ion-item *virtualItem="let anime">
+      <ion-avatar slot="start">
+        <ion-img [src]="anime.anime_image_path"></ion-img>
+      </ion-avatar>
+      {{anime.anime_title}}
+    </ion-item>
+  </ion-virtual-scroll>
+</ion-content>
